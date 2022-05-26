@@ -35,12 +35,9 @@ function makeCard(x, y, z){
         return cube;
     });
 }
-
-makeCard(-1,0,0);
-makeCard(-.5,0,0);
-makeCard(0,0,0);
-makeCard(.5,0,0);
-makeCard(1,0,0);
+for(var i = -3; i != 3.5; i += .5){
+    makeCard(i, 0, 0);
+}
 
 
 camera.position.z = 5;
